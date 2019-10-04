@@ -1,0 +1,21 @@
+{
+  "name": "instrument-ranges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && cd app/frontend && npm install && npm run build && cd ../ && rm -rf public && mkdir public && cpx \"frontend/build/**/*\" public",
+    "start": "node server"
+  },
+  "author": "Brian Kelly",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  }
+}
