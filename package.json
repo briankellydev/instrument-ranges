@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd app/frontend && npm rebuild node-sass && cd ../../ && npm install && cd app/frontend && npm install && npm run build && cd ../ && rm -rf public && mkdir public && cpx \"frontend/build/**/*\" public",
-    "start": "node server",
-    "serve": "npm run build && npm run start"
+    "start": "node server"
   },
   "author": "Brian Kelly",
   "license": "ISC",
