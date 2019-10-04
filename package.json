@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && cd app/frontend && npm install && npm run build && cd ../ && rm -rf public && mkdir public && cpx \"frontend/build/**/*\" public",
+    "build": "npm rebuild node-sass && npm install && cd app/frontend && npm install && npm run build && cd ../ && rm -rf public && mkdir public && cpx \"frontend/build/**/*\" public",
     "start": "node server",
     "serve": "npm run build && npm run start"
   },
